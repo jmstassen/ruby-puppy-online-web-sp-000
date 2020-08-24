@@ -3,13 +3,14 @@ class Dog
 
   def initialize(name)
     self.save
+    @name = name
   end
 
   def self.all
     @@all
   end
 
-  def print_all
+  def self.print_all
     @all.each do |dog|
       puts dog
     end
@@ -23,5 +24,7 @@ class Dog
     @@all.clear
   end
 
-
+  def name
+    @name
+  end
 end
