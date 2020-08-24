@@ -12,7 +12,7 @@ class Dog
 
   def self.print_all
     @@all.each do |dog|
-      name
+      puts @name
     end
   end
 
